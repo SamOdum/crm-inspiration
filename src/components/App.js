@@ -6,6 +6,7 @@ import HomeSlide from './HomeSlide';
 import HomeSliderProvider from '../contexts/HomeSliderContext';
 import Footer from './Footer';
 import '../styles/App.scss';
+import MainContent from './MainContent';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <HomeSliderProvider>
           <Header />
           <HomeSlide />
+          <MainContent />
           <Footer />
         </HomeSliderProvider>
       </HomeProvider>
