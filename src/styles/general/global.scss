@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  // transition: all 0.2s;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+img {
+  width: 100%;
+}
