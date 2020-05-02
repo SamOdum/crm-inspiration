@@ -125,19 +125,16 @@ const Footer = () => {
             <p>Feel free to reach out to us in case of any queries.</p>
             <div className="footer-content">
               <div className="email">
-                {' '}
                 <i className="fa fa-envelope" />
                 <p>
                   <a href="mailto:contact@techraft.in">contact@techraft.in</a>
                 </p>
               </div>
               <div className="phone">
-                {' '}
                 <i className="fa fa-phone" />
                 <p>9999999999</p>
               </div>
               <div className="address">
-                {' '}
                 <i className="fa fa-map-marker" />
                 <p> A-000, Sector-00, NOIDA, UTTAR PRADESH, INDIA-201301</p>
               </div>
@@ -147,7 +144,7 @@ const Footer = () => {
             <div className="footer-links">
               <h3 className="links-title">
                 Information
-                <a className="expander visible-xs" href="#TabBlock-1">
+                <a className="expander visible-xs" href="#98778TabBlock-1">
                   +
                 </a>
               </h3>
@@ -176,7 +173,7 @@ const Footer = () => {
             <div className="footer-links">
               <h3 className="links-title">
                 Insider
-                <a className="expander visible-xs" href="#TabBlock-3">
+                <a className="expander visible-xs" href="#98778TabBlock-3">
                   +
                 </a>
               </h3>
@@ -199,7 +196,7 @@ const Footer = () => {
             <div className="footer-links">
               <h3 className="links-title">
                 Service
-                <a className="expander visible-xs" href="#TabBlock-4">
+                <a className="expander visible-xs" href="#98778TabBlock-4">
                   +
                 </a>
               </h3>
@@ -227,8 +224,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-6 col-xs-12 coppyright">
-              {' '}
-              Mult-e-Cart Ultimate 2020 | &copy;
+              CR-Mart 2020 | &copy;
               <a
                 href="http://www.kaycraft.com/"
                 target="_blank"
@@ -242,7 +238,7 @@ const Footer = () => {
               <div className="payment">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="Visa"
                         data-toggle="tooltip"
@@ -252,7 +248,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="Paypal"
                         data-toggle="tooltip"
@@ -262,7 +258,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="Master Card"
                         data-toggle="tooltip"
@@ -272,7 +268,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="Razorpay"
                         data-toggle="tooltip"
@@ -282,7 +278,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="BitPay"
                         data-toggle="tooltip"
@@ -292,7 +288,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#98778">
                       <img
                         title="Stripe"
                         data-toggle="tooltip"
@@ -307,9 +303,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <a href="#" className="totop">
-        {' '}
-      </a>
+      <a href="#98774" className="totop" />
     </footer>
   );
 };

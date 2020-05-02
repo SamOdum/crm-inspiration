@@ -1,16 +1,12 @@
-import React, { useContext } from 'react';
-import { HomeSliderContext } from '../contexts/HomeSliderContext';
+import React from 'react';
 import HomeSlide from './HomeSlide';
 
 const HomeSlider = () => {
-  const [slider, ,] = useContext(HomeSliderContext);
   return (
     <div className="slider mainindex">
       <div className="tp-banner-container clearfix">
         <div className="tp-banner">
-          <ul>
-            <HomeSlide />
-          </ul>
+          <HomeSlide />
         </div>
       </div>
     </div>
