@@ -1,84 +1,68 @@
 import React from 'react';
-import img1 from '../imgs/banner/115b979b42044c7.jpg';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
 
-const HomeSlide = (payload) => {
-  const {
-    dataTransition,
-    dataSlotamount,
-    dataMasterspeed,
-    src,
-    alt,
-    dataBgfit,
-    dataBgposition,
-    dataBgrepeat,
-    layerOne,
-    layerTwo,
-    layerThree,
-  } = payload;
-
+const HomeSlide = () => {
+  // const center1 = {
+  //   textAlign: 'center',
+  //   position: 'absolute',
+  //   top: `${50}%`,
+  //   left: `${50}%`,
+  //   transform: `translate(-50%, -50%)`,
+  // };
+  const content = [
+    {
+      id: 1,
+      title: 'Vulputate Mollis Ultricies Fermentum Parturient',
+      description:
+        'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.',
+      button: 'Read More',
+      image: 'https://i.imgur.com/ZXBtVw7.jpg',
+      user: 'Luan Gjokaj',
+      userProfile: 'https://i.imgur.com/JSW6mEk.png',
+    },
+    {
+      id: 2,
+      title: 'Tortor Dapibus Commodo Aenean Quam',
+      description:
+        'Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.',
+      button: 'Discover',
+      image: 'https://i.imgur.com/DCdBXcq.jpg',
+      user: 'Erich Behrens',
+      userProfile: 'https://i.imgur.com/0Clfnu7.png',
+    },
+    {
+      id: 3,
+      title: 'Phasellus volutpat metus',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.',
+      button: 'Buy now',
+      image: 'https://i.imgur.com/DvmN8Hx.jpg',
+      user: 'Bruno Vizovskyy',
+      userProfile: 'https://i.imgur.com/4KeKvtH.png',
+    },
+  ];
   return (
-    <li
-      data-transition="slidehorizontal"
-      data-slotamount="5"
-      data-masterspeed="700"
-    >
-      {/* <!-- MAIN IMAGE --> */}
-      <img src={img1} alt="name" />
-      {/* <!-- LAYERS --> */}
-      {/* <!-- LAYER NR. 1 --> */}
-      <div
-        className="tp-caption very_big_white skewfromrightshort fadeout"
-        data-x="center"
-        data-y="100"
-        data-speed="500"
-        data-start="1200"
-        data-easing="Circ.easeInOut"
-        style={{ fontSize: 70, fontWeight: 800, color: '#000000' }}
-      >
-        <span>Huge Sale</span>
-      </div>
-      {/* <!-- LAYER NR. 2 --> */}
-      <div
-        className="tp-caption tp-caption medium_text skewfromrightshort fadeout"
-        data-x="center"
-        data-y="165"
-        data-hoffset="0"
-        data-voffset="-73"
-        data-speed="500"
-        data-start="1200"
-        data-easing="Power4.easeOut"
-        style={{ fontSize: 20, fontWeight: 500, color: '#000000' }}
-      >
-        Sale off 75% all products
-      </div>
-      {/* <!-- LAYER NR. 3 --> */}
-      <div
-        className="tp-caption customin tp-resizeme rs-parallaxlevel-0"
-        data-x="center"
-        data-y="210"
-        data-hoffset="0"
-        data-voffset="98"
-        data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-        data-speed="500"
-        data-start="1500"
-        data-easing="Power3.easeInOut"
-        data-splitin="none"
-        data-splitout="none"
-        data-elementdelay="0.1"
-        data-endelementdelay="0.1"
-        data-linktoslide="next"
-        style={{
-          zIndex: 12,
-          maxWidth: 'auto',
-          maxHeight: 'auto',
-          whiteSpace: 'nowrap',
-        }}
-      >
-        <a href="wsse" className="largebtn solid">
-          Learn More
-        </a>
-      </div>
-    </li>
+    <Slider autoplay={3000}>
+      {content.map((oneItem) => {
+        return (
+          <div
+            key={oneItem.id}
+            style={{
+              background: `url('${oneItem.image}') no-repeat center center`,
+            }}
+          >
+            <div className="slideCenter">
+              <h1 className="SlideH1">{oneItem.title}</h1>
+              <p>{oneItem.description}</p>
+              <button type="button" className="slideButton">
+                {oneItem.button}
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </Slider>
   );
 };
 
