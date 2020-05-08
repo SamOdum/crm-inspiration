@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
+  const [clicked, setClicked] = useState(true);
+  const handleClick = () => {
+    setClicked((prevState) => ({ clicked: !prevState.clicked }));
+  };
+  const disp = clicked.clicked
+    ? { display: 'inline-block' }
+    : { display: 'none' };
+
   return (
     <nav>
       <div className="container">
@@ -14,10 +23,16 @@ const Nav = () => {
             </div>
             <div className="mega-container visible-lg visible-md visible-sm">
               <div className="navleft-container">
-                <div className="mega-menu-title">
+                <div
+                  className="mega-menu-title"
+                  onClick={handleClick}
+                  onKeyPress={handleClick}
+                  role="button"
+                  tabIndex="0"
+                >
                   <h3>Categories</h3>
                 </div>
-                <div className="mega-menu-category">
+                <div className="mega-menu-category" style={disp}>
                   <ul className="nav">
                     <li>
                       <a href="product/listing/1.html">
@@ -61,14 +76,14 @@ const Nav = () => {
               <ul>
                 <li className="mt-root demo_custom_link_cms">
                   <div className="mt-root-item">
-                    <a href="home.html">
+                    <NavLink to="/">
                       <div className="title title_font">
                         <span className="title-text">
                           <i className="icon fa fa-home" />
                           &nbsp;Home
                         </span>
                       </div>
-                    </a>
+                    </NavLink>
                   </div>
                 </li>
                 <li className="mt-root">

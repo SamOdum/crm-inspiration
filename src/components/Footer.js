@@ -127,16 +127,16 @@ const Footer = () => {
               <div className="email">
                 <i className="fa fa-envelope" />
                 <p>
-                  <a href="mailto:contact@techraft.in">contact@techraft.in</a>
+                  <a href="mailto:contact@kaycraft.com">contact@kaycraft.com</a>
                 </p>
               </div>
               <div className="phone">
                 <i className="fa fa-phone" />
-                <p>9999999999</p>
+                <p>08031234567</p>
               </div>
               <div className="address">
                 <i className="fa fa-map-marker" />
-                <p> A-000, Sector-00, NOIDA, UTTAR PRADESH, INDIA-201301</p>
+                <p> Plot 8 Block 8, Fourth Street, State Housing, Calabar</p>
               </div>
             </div>
           </div>

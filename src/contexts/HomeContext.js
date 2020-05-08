@@ -16,7 +16,17 @@ export const HomeProvider = ({ children }) => {
   );
 };
 
+// HomeProvider.propTypes = {
+//   // children: PropTypes.arrayOf(PropTypes.string).isRequired,
+//   children: PropTypes.shape(PropTypes.string),
+// };
+// HomeProvider.defaultProps = {
+//   children: 'Hello',
+// };
 HomeProvider.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 export default HomeContext;

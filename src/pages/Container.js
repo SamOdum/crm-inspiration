@@ -13,7 +13,18 @@ const Container = ({ children }) => {
   );
 };
 
+// Container.propTypes = {
+//   children: PropTypes.arrayOf(PropTypes.array.isRequired),
+// };
+// Container.propTypes = {
+//   // children: PropTypes.shape({ children: PropTypes.string }).isRequired,
+//   children: PropTypes.arrayOf(PropTypes.array).isRequired,
+// };
+
 Container.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 export default Container;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../imgs/front_logo.png';
 
 const HeaderStrip = () => {
@@ -9,7 +10,6 @@ const HeaderStrip = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-4 col-sm-4 hidden-xs">
-                {/* Default Welcome Message */}
                 <div className="welcome-msg ">
                   Welcome to Cross River Market
                 </div>
@@ -27,20 +27,20 @@ const HeaderStrip = () => {
 
                   <div className="block block-currency">
                     <div className="item-cur">
-                      <a href="login.html">
+                      <NavLink to="/login">
                         <i className="fa fa-unlock-alt" />
                         <span className="hidden-xs">Login</span>
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                   <div className="wishlist">
-                    <a title="My Wishlist" href="login.html">
+                    <NavLink title="My Wishlist" to="/login">
                       <i className="fa fa-heart" />
                       <span className="hidden-xs">Wishlist</span>
                       <span className="label label-primary pull-right mywishlistcount">
                         0
                       </span>
-                    </a>
+                    </NavLink>
                   </div>
                   <div className="compare">
                     <a title="My Compare List" href="site/compare.html">
@@ -202,20 +202,20 @@ const HeaderStrip = () => {
                       </div>
                       <ul>
                         <li>
-                          <a href="site/signup.html">
+                          <NavLink to="/signup">
                             <span>
                               <i className="fa fa-user" />
                             </span>
                             As User
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a href="site/vendor-signup.html">
+                          <NavLink to="/vendor-signup">
                             <span>
                               <i className="fa fa-male" />
                             </span>
                             As Vendor
-                          </a>
+                          </NavLink>
                         </li>
                       </ul>
                     </div>

@@ -145,6 +145,6 @@ const HomeSliderProvider = ({ children }) => {
 };
 
 HomeSliderProvider.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.shape({ children: PropTypes.string }).isRequired,
 };
 export default HomeSliderProvider;
