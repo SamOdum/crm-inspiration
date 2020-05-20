@@ -1,7 +1,50 @@
-import React from 'react';
-import Clients from './Clients';
+import React, {useState, Fragment} from 'react';
+import Slider from 'react-animated-slider';
+// import 'react-animated-slider/build/vertical.css';
+import Clients from "./Clients"
+
+const Testimony = ({data}) => {
+  return (
+    <Fragment>
+      <p>{data.comment}</p>
+      <div className="thumb">
+        <img
+          className="mylazy"
+          src={data.image}
+          data-src="chooseOneImageLater"
+          alt={data.name}
+        />
+      </div>
+      <strong className="name">{data.name}</strong>
+      <strong className="designation">{data.title}</strong>
+    </Fragment>
+  )
+}
 
 const Testimonials = () => {
+  const [testimonial, settestimonial] = useState([
+    {
+      id: 1,
+      comment: "CR-Mart is an excellent system and has helped us reach out to millions of customer base across the world. We have managed to hugely ramp up our revenue. Thanks to CR-Mart team!",
+      image: "https://via.placeholder.com/90x90.png",
+      name: "Ifeanyi Ihemeje",
+      title: "Ceo, Focus Tianshi Global"
+    },
+    {
+      id: 2,
+      comment: "This is the best system that we have come across so far! Keep up the good work! You really have helped us in a great manner! Cheers!",
+      image: "https://via.placeholder.com/90x90.png",
+      name: "Cyril Chukwu",
+      title: "Director, Platini Concept"
+    },
+    {
+      id: 1,
+      comment: "We highly recommend CR-Mart system as its the most flexible, versatile system that is on offering. It has all required features to enable any business to move to a fast running track and get running at a rapid pace!",
+      image: "https://via.placeholder.com/90x90.png",
+      name: "Patrick Edet",
+      title: "General Manager, Dojopa Limited"
+    },
+  ])
   return (
     <div className="container">
       <div className="row">
@@ -13,64 +56,31 @@ const Testimonials = () => {
                 className="product-flexslider hidden-buttons home-testimonials"
               >
                 <div className="slider-items slider-width-col4 ">
-                  <div className="holder">
-                    <p>
-                      CR-Mart is an excellent system and has helped us reach out
-                      to millions of customer base across the world. We have
-                      managed to hugely ramp up our revenue. Thanks to CR-Mart
-                      team!
-                    </p>
-                    <div className="thumb">
-                      <img
-                        className="mylazy"
-                        src="https://via.placeholder.com/90x90.png"
-                        data-src="chooseOneImageLater"
-                        alt="testimonials-img2.jpg"
-                      />
-                    </div>
-                    <strong className="name">Ifeanyi Ihemeje</strong>
-
-                    <strong className="designation">CEO, Focus Holdings</strong>
-                  </div>
-                  <div className="holder">
-                    <p>
-                      This is the best system that we have come across so far!
-                      Keep up the good work! You really have helped us in a
-                      great manner! Cheers!
-                    </p>
-                    <div className="thumb">
-                      <img
-                        className="mylazy"
-                        src="https://via.placeholder.com/90x90.png"
-                        data-src="chooseOneImageLater"
-                        alt="testimonials-img4.jpg"
-                      />
-                    </div>
-                    <strong className="name">Cyril Chukwu</strong>
-
-                    <strong className="designation">
-                      Director, Platini Concept
-                    </strong>
-                  </div>
-                  <div className="holder">
-                    <p>
-                      We highly recommend CR-Mart system as its the most
-                      flexible, versatile system that is on offering. It has all
-                      required features to enable any business to move to a fast
-                      running track and get running at a rapid pace!
-                    </p>
-                    <div className="thumb">
-                      <img
-                        className="mylazy"
-                        src="https://via.placeholder.com/90x90.png"
-                        data-src="chooseOneImageLater"
-                        alt="testimonials-img1.jpg"
-                      />
-                    </div>
-                    <strong className="name">Patrick Edet</strong>
-                    <strong className="designation">
-                      General Manager, Dojopa Limited
-                    </strong>
+                  <div className="holder" >
+                    <Slider direction="vertical" autoplay={8000} classNames={{
+  slider: 'slider',
+  previousButton: 'prevButton',
+  nextButton: 'nexButton',
+  buttonDisabled: 'disabled',
+  track: 'track',
+  slide: 'slide',
+  hidden: 'hidden',
+  previous: 'previous',
+  current: 'current',
+  next: 'next',
+  animateIn: 'animateIn',
+  animateOut: 'animateOut',
+}}>
+                      {testimonial.map((item) => (
+                        <div
+                        key={item.id}
+                        style={{display:'flex',justifyContent:'center',alignItems:'center'}}
+                        ><div>
+                        <Testimony data={item}/>
+                        </div>
+                        </div>
+                      ))}
+                    </Slider>
                   </div>
                 </div>
               </div>

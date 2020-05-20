@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginProvider from './contexts/LoginContext';
 import HomeSliderProvider from './contexts/HomeSliderContext';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.scss';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
