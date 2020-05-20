@@ -246,10 +246,7 @@ const HeaderStrip = () => {
 
               <div className="top-search">
                 <div id="search">
-                  <form
-                    method="post"
-                    action="http://localhost/multecartultimate/multefront/web/product/default/search"
-                  >
+                  <form>
                     <div className="input-group">
                       <input
                         type="hidden"
