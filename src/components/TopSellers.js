@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -9,8 +10,8 @@ import img3 from '../assets/products/img03.jpg';
 import img4 from '../assets/products/img09 (2).jpg';
 import img5 from '../assets/products/img07.jpg';
 import img6 from '../assets/products/img04 (2).jpg';
-import img7 from '../assets/products/img02.jpg';
-import img8 from '../assets/products/img05 (2).jpg';
+// import img7 from '../assets/products/img02.jpg';
+// import img8 from '../assets/products/img05 (2).jpg';
 import StarRating from './StarRating';
 
 const topSellingItems = [
@@ -22,6 +23,7 @@ const topSellingItems = [
     regularPrice: 7800,
     salePrice: 5650,
     discount: '-14%',
+    rating: 5,
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ const topSellingItems = [
     regularPrice: 4750,
     salePrice: 4000,
     discount: '-2%',
+    rating: 5,
   },
   {
     id: 3,
@@ -40,6 +43,7 @@ const topSellingItems = [
     regularPrice: 98525,
     salePrice: 80550,
     discount: '-3%',
+    rating: 4,
   },
   {
     id: 4,
@@ -49,6 +53,7 @@ const topSellingItems = [
     regularPrice: 1450,
     salePrice: null,
     discount: null,
+    rating: 5,
   },
   {
     id: 5,
@@ -58,6 +63,7 @@ const topSellingItems = [
     regularPrice: 7280,
     salePrice: 4150,
     discount: '-12%',
+    rating: 4,
   },
   {
     id: 6,
@@ -67,6 +73,7 @@ const topSellingItems = [
     regularPrice: 3280,
     salePrice: 2150,
     discount: '-3%',
+    rating: 5,
   },
 ];
 
@@ -85,7 +92,7 @@ const TopSellers = ({ style }) => {
               loop
               nav
               margin={8}
-              // autoplay
+              autoplay
             >
               {topSellingItems.map((item) => {
                 return (
@@ -173,49 +180,6 @@ const TopSellers = ({ style }) => {
                           <div className="item-content">
                             <div className="rating">
                               <div className="rating-container ">
-                                {/* <span className="empty-stars">
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star-empty" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star-empty" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star-empty" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star-empty" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star-empty" />
-                                    </span>
-                                  </span>
-                                  <span
-                                    className="filled-stars"
-                                    style={{ width: '0%' }}
-                                  >
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star" />
-                                    </span>
-                                    <span className="star">
-                                      <i className="glyphicon glyphicon-star" />
-                                    </span>
-                                  </span>
-                                  <input
-                                    type="text"
-                                    className="multe-rating-nocap-sm rating-input"
-                                    value=""
-                                    readOnly="readonly"
-                                  /> */}
                                 <StarRating
                                   ownerId={item.id}
                                   readOnly
@@ -235,8 +199,10 @@ const TopSellers = ({ style }) => {
                                       <span className="price">
                                         {`₦${item.salePrice}`}
                                       </span>
+                                      {'  '}
                                     </p>
                                     <p className="old-price">
+                                      {'  '}
                                       <span className="price-label">
                                         Regular Price:
                                       </span>
@@ -270,6 +236,10 @@ const TopSellers = ({ style }) => {
       </div>
     </div>
   );
+};
+
+TopSellers.propTypes = {
+  style: PropTypes.shape({ display: PropTypes.string }).isRequired,
 };
 
 export default TopSellers;

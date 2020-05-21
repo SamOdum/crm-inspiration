@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -9,8 +10,8 @@ import img3 from '../assets/products/img02.jpg';
 import img4 from '../assets/products/img03 (2).jpg';
 import img5 from '../assets/products/img03.jpg';
 import img6 from '../assets/products/img04 (2).jpg';
-import img7 from '../assets/products/img04.jpg';
-import img8 from '../assets/products/img05 (2).jpg';
+// import img7 from '../assets/products/img04.jpg';
+// import img8 from '../assets/products/img05 (2).jpg';
 import StarRating from './StarRating';
 
 const featuredItems = [
@@ -63,6 +64,16 @@ const featuredItems = [
     salePrice: 4150,
     discount: '-12%',
     rating: 5,
+  },
+  {
+    id: 6,
+    title: 'Whatever',
+    image: img6,
+    product: '/product/detail/11/whatever',
+    regularPrice: 2860,
+    salePrice: 2230,
+    discount: '-4%',
+    rating: 4,
   },
 ];
 
@@ -187,7 +198,7 @@ const FeaturedProducts = ({ style }) => {
                                       <span className="price">
                                         {`₦${item.salePrice}`}
                                       </span>
-{' '}
+                                      {'  '}
                                     </p>
                                     <p className="old-price">
                                       {' '}
@@ -217,22 +228,16 @@ const FeaturedProducts = ({ style }) => {
                   </div>
                 );
               })}
-              <div className="owl-controls clickable">
-                {/* <div className="owl-buttons">
-                  <div className="owl-prev">
-                    <a className="flex-prev" />
-                  </div>
-                  <div className="owl-next">
-                    <a className="flex-next" />
-                  </div>
-                </div> */}
-              </div>
             </OwlCarousel>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+FeaturedProducts.propTypes = {
+  style: PropTypes.shape({ display: PropTypes.string }).isRequired,
 };
 
 export default FeaturedProducts;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink, Route, Switch } from 'react-router-dom';
 import TopSellers from './TopSellers';
 import FeaturedProducts from './FeaturedProducts';
 
@@ -8,10 +7,6 @@ const HomeTabs = () => {
     activef: true,
     activet: false,
   });
-  const [tstate, setTstate] = useState({
-    active: false,
-    display: false,
-  });
 
   const showf = () => {
     return setFstate({ activef: true, activet: false });
@@ -19,7 +14,7 @@ const HomeTabs = () => {
   const showt = () => {
     return setFstate({ activet: true, activef: false });
   };
-  console.log(`Activef is ${fstate.activef}, and Activet is ${fstate.activet}`);
+
   return (
     <div className="col-sm-8 col-md-9 col-xs-12">
       <div className="home-tab">
