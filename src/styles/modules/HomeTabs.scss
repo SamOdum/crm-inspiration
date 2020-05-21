@@ -2,7 +2,11 @@
 //   margin-top: 15px;
 // }
 
-.main-container div.home-tap {
-  position: relative;
-  //   padding-bottom: 22px;
+.main-container {
+  div {
+    .home-tab {
+      position: relative;
+      //   padding-bottom: 22px;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
 import '../styles/modules/Star.scss';
 
@@ -11,7 +11,7 @@ import '../styles/modules/Star.scss';
  * @param  {number} [props.ratingV] - Server-returned rating value
  */
 const StarRating = ({ owner, readOnly, ratingV }) => {
-  const initialState = ratingV || 0;
+  const initialState = ratingV;
   const [rating, setRating] = useState(initialState);
   const [hover, setHover] = useState(null);
   const stars = [1, 2, 3, 4, 5]; // <= number of rating stars desired
@@ -22,6 +22,7 @@ const StarRating = ({ owner, readOnly, ratingV }) => {
         const ratingValue = i + 1;
 
         return (
+          // eslint-disable-next-line react/no-array-index-key
           <label key={i} owner={owner} htmlFor="rating">
             <input type="radio" name="rating" value={ratingValue} />
             <FaStar
@@ -42,6 +43,17 @@ const StarRating = ({ owner, readOnly, ratingV }) => {
       })}
     </div>
   );
+};
+
+StarRating.defaultProps = {
+  readOnly: '',
+  ratingV: 0,
+};
+
+StarRating.propTypes = {
+  owner: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  readOnly: PropTypes.string,
+  ratingV: PropTypes.number,
 };
 
 export default StarRating;

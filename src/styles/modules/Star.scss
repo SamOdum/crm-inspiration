@@ -30,8 +30,10 @@
   }
 }
 
-input[type='radio'] {
-  display: none;
+input {
+  [type='radio'] {
+    display: none;
+  }
 }
 
 // //*_COLORS_*/
