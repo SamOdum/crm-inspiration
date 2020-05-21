@@ -1,4 +1,6 @@
 import React from 'react';
+import electronix from '../assets/products/electronics.jpg';
+import collectionz from '../assets/products/new-collection.jpg';
 
 const BottomBanner = () => {
   return (
@@ -9,8 +11,8 @@ const BottomBanner = () => {
             <a href="#152i" className="bottom-banner-img">
               <img
                 className="mylazy"
-                src="https://via.placeholder.com/360x240.png"
-                data-src="decideLater"
+                src={electronix}
+                data-src={electronix}
                 alt="5b83d54a70bdf.jpg"
               />
 
@@ -26,8 +28,8 @@ const BottomBanner = () => {
             <a href="#152i" className="bottom-banner-img last">
               <img
                 className="mylazy"
-                src="https://via.placeholder.com/750x240.png"
-                data-src="decideLater"
+                src={collectionz}
+                data-src={collectionz}
                 alt="5b83d56f7f9f8.jpg"
               />
 

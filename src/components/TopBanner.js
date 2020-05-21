@@ -1,4 +1,8 @@
 import React from 'react';
+import chandelierImg from '../assets/products/chandelier.jpg';
+import stereoImg from '../assets/products/powerful-stereo.jpg';
+import phonz from '../assets/products/new-arrival.png';
+import gadget from '../assets/products/accessories.jpg';
 
 const TopBanner = () => {
   return (
@@ -10,8 +14,8 @@ const TopBanner = () => {
               <a className="jtv-banner-opacity" href="#121">
                 <img
                   className="mylazy"
-                  src="https://via.placeholder.com/370x570.png"
-                  data-src="https://via.placeholder.com/370x570.png"
+                  src={chandelierImg}
+                  data-src={chandelierImg}
                   alt="45b979e2fc27ed.jpg"
                 />
               </a>
@@ -29,8 +33,8 @@ const TopBanner = () => {
               <a className="jtv-banner-opacity" href="#121">
                 <img
                   className="mylazy"
-                  src="https://via.placeholder.com/470x570.png"
-                  data-src="https://via.placeholder.com/470x570.png"
+                  src={stereoImg}
+                  data-src={stereoImg}
                   alt="5b83d29356c27.jpg"
                 />
               </a>
@@ -52,8 +56,8 @@ const TopBanner = () => {
               <a className="jtv-banner-opacity" href="#121">
                 <img
                   className="mylazy"
-                  src="https://via.placeholder.com/270x270.png"
-                  data-src="https://via.placeholder.com/270x270.png"
+                  src={phonz}
+                  data-src={phonz}
                   alt="5b83d3272f6fa.jpg"
                 />
               </a>
@@ -68,8 +72,8 @@ const TopBanner = () => {
               <a className="jtv-banner-opacity" href="#121">
                 <img
                   className="mylazy"
-                  src="https://via.placeholder.com/270x270.png"
-                  data-src="https://via.placeholder.com/270x270.png"
+                  src={gadget}
+                  data-src={gadget}
                   alt="5b83d39444a66.jpg"
                 />
               </a>
