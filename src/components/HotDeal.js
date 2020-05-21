@@ -1,5 +1,7 @@
 import React from 'react';
 import tv from '../assets/products/16_small.jpg';
+import StarRating from './StarRating';
+import img8 from '../assets/products/img05 (2).jpg';
 
 const HotDeal = () => {
   return (
@@ -97,12 +99,15 @@ const HotDeal = () => {
                     </div>
                     <div className="item-content">
                       <div className="rating">
-                        <input
+                        <div className="rating-container">
+                          {/* <input
                           type="text"
                           className="multe-rating-nocap-sm"
                           value=""
                           readOnly
-                        />
+                        /> */}
+                          <StarRating owner="item-id" readOnly ratingV={5} />
+                        </div>
                       </div>
                       <div className="item-price">
                         <div className="price-box">

@@ -182,7 +182,7 @@ const FeaturedProducts = ({ style }) => {
                               <div className="rating-container">
                                 <StarRating
                                   ownerId={item.id}
-                                  // readOnly
+                                  readOnly
                                   ratingV={item.rating}
                                 />
                               </div>

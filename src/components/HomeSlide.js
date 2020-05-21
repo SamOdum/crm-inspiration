@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+import '../styles/modules/Slide.scss';
 
 const HomeSlide = () => {
   // const center1 = {
@@ -43,26 +44,44 @@ const HomeSlide = () => {
     },
   ];
   return (
-    <Slider autoplay={3000}>
-      {content.map((oneItem) => {
-        return (
-          <div
-            key={oneItem.id}
-            style={{
-              background: `url('${oneItem.image}') no-repeat center center`,
-            }}
-          >
-            <div className="slideCenter">
-              <h1 className="SlideH1">{oneItem.title}</h1>
-              <p>{oneItem.description}</p>
-              <button type="button" className="slideButton">
-                {oneItem.button}
-              </button>
+    <div className="slider-container">
+      <Slider
+        autoplay={3000}
+        classNames={{
+          slider: 'slider slider-moded',
+          previousButton: 'previousButton',
+          nextButton: 'nextButton',
+          buttonDisabled: 'disabled',
+          track: 'track',
+          slide: 'slide',
+          hidden: 'hidden',
+          previous: 'previous',
+          current: 'current',
+          next: 'next',
+          animateIn: 'animateIn',
+          animateOut: 'animateOut',
+        }}
+      >
+        {content.map((oneItem) => {
+          return (
+            <div
+              key={oneItem.id}
+              style={{
+                background: `url('${oneItem.image}') no-repeat center center`,
+              }}
+            >
+              <div className="slideCenter">
+                <h1 className="Slide-h1">{oneItem.title}</h1>
+                <p>{oneItem.description}</p>
+                <button type="button" className="slide-button">
+                  {oneItem.button}
+                </button>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </Slider>
+          );
+        })}
+      </Slider>
+    </div>
   );
 };
 
