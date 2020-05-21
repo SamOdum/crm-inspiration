@@ -1,0 +1,80 @@
+.slider-v {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider-v a.previousButton,
+.slider-v a.nextButton {
+  font-size: 22px;
+  line-height: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  color: #333;
+  padding: 10px;
+}
+
+.slider-v a.previousButton:not(.disabled):hover,
+.slider-v a.nextButton:not(.disabled):hover {
+  -webkit-transform: translateX(-50%) scale(1.25);
+  transform: translateX(-50%) scale(1.25);
+  cursor: pointer;
+}
+
+.slider-v a.previousButton {
+  top: 20px;
+}
+
+.slider-v a.nextButton {
+  bottom: 20px;
+}
+
+.slide-v {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.slide-v.hidden {
+  visibility: hidden;
+}
+
+.slide-v.previous {
+  top: -100%;
+}
+
+.slide-v.current {
+  top: 0;
+}
+
+.slide-v.next {
+  top: 100%;
+}
+
+.slide-v.animateIn,
+.slide.animateOut {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.slide-v.animateIn.previous,
+.slide.animateIn.next {
+  top: 0;
+  visibility: visible;
+}
+
+.slide-v.animateOut.previous {
+  top: 100%;
+}
+
+.slide-v.animateOut.next {
+  top: -100%;
+}

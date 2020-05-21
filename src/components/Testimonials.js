@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-animated-slider';
 // import 'react-animated-slider/build/vertical.css';
+import '../styles/modules/Testimonial.scss';
 import Clients from './Clients';
 
 const Testimony = ({ testimonyData }) => {
@@ -65,12 +66,12 @@ const Testimonials = () => {
                       direction="vertical"
                       autoplay={8000}
                       classNames={{
-                        slider: 'slider',
+                        slider: 'slider-v',
                         previousButton: 'prevButton',
                         nextButton: 'nexButton',
                         buttonDisabled: 'disabled',
                         track: 'track',
-                        slide: 'slide',
+                        slide: 'slide-v',
                         hidden: 'hidden',
                         previous: 'previous',
                         current: 'current',
