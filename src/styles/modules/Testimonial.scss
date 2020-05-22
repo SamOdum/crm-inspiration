@@ -1,3 +1,12 @@
+.testimonials {
+  // height: 230px;
+  height: 326.5px;
+  overflow: hidden;
+}
+
+.testimonials .slider-items-products {
+  height: 100%;
+}
 .slider-v {
   position: relative;
   width: 100%;
@@ -60,13 +69,13 @@
 }
 
 .slide-v.animateIn,
-.slide.animateOut {
+.slide-v.animateOut {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
 
 .slide-v.animateIn.previous,
-.slide.animateIn.next {
+.slide-v.animateIn.next {
   top: 0;
   visibility: visible;
 }
