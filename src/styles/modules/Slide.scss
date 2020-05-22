@@ -92,6 +92,7 @@
 
   transform: translate(-50%, -50%);
 }
+
 .prevButton,
 .nexButton {
   display: none;
@@ -111,11 +112,11 @@
   opacity: 0;
 }
 
+.slide h4,
 .slide p {
-  transition: all 0.3s ease;
-
-  transform: translateY(20px);
   opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
 }
 
 .slide section * {
@@ -145,7 +146,9 @@
 .slide.animateIn.next button,
 .slide.animateIn.previous p,
 .slide.current p,
+.slide.current h4,
 .slide.animateIn.next p,
+.slide.animateIn.next h4,
 .slide.animateIn.previous section *,
 .slide.current section *,
 .slide.animateIn.next section * {
@@ -156,7 +159,9 @@
 }
 
 .slide.animateIn.previous p,
-.slide.animateIn.next p {
+.slide.animateIn.previous h4,
+.slide.animateIn.next p,
+.slide.animateIn.next h4 {
   transition-delay: 1.1s;
 }
 
@@ -184,7 +189,8 @@
   transition-delay: 0.3s;
 }
 
-.slide.animateOut p {
+.slide.animateOut p,
+.slide.animateOut h4 {
   transition-delay: 0.2s;
 }
 

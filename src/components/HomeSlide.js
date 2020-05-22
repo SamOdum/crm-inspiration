@@ -84,7 +84,7 @@ const HomeSlide = () => {
             >
               <div className="slideCenter">
                 <h1 className="Slide-h1">{heroContentDataItem.title}</h1>
-                <p>{heroContentDataItem.description}</p>
+                <h4>{heroContentDataItem.description}</h4>
                 <button type="button" className="slide-button">
                   <a href={heroContentDataItem.link}>
                     {heroContentDataItem.button}
