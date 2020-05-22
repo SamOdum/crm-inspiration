@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../imgs/front_logo.png';
+import logo from '../assets/logo/front_logo.png';
 
 const HeaderStrip = () => {
   return (

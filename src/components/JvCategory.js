@@ -5,9 +5,13 @@ import img3 from '../assets/products/img08.jpg';
 import img4 from '../assets/products/img18 (2).jpg';
 import img5 from '../assets/products/img14.jpg';
 import img6 from '../assets/products/img04.jpg';
+import img7 from '../assets/images/customer-service-icon.png';
+import img8 from '../assets/images/shipping-icon.png';
+import img9 from '../assets/images/guarantee-icon.png';
 import ProductTrio from './ProductTrio';
+import SingleService from './SingleService';
 
-const topRated = [
+const topRatedData = [
   {
     id: 1,
     name: 'Bose HD135',
@@ -37,7 +41,7 @@ const topRated = [
   },
 ];
 
-const onSale = [
+const onSaleData = [
   {
     id: 4,
     name: 'Channel Time-mark',
@@ -67,6 +71,27 @@ const onSale = [
   },
 ];
 
+const serviceData = [
+  {
+    id: 1,
+    name: '24/7 Customer Service',
+    imageSrc: img7,
+    callToAction: 'Call us 24/7',
+  },
+  {
+    id: 2,
+    name: 'Free Shipping Worldwide',
+    imageSrc: img8,
+    callToAction: 'On Applicable Orders',
+  },
+  {
+    id: 3,
+    name: 'Money Back Guarantee!',
+    imageSrc: img9,
+    callToAction: 'For Returnable Products',
+  },
+];
+
 const JvCategory = () => {
   return (
     <div className="jtv-category-area">
@@ -75,9 +100,12 @@ const JvCategory = () => {
           <div className="col-md-4 col-sm-6">
             <div className="jtv-single-cat">
               <h2 className="cat-title">Top Rated</h2>
-              {topRated.map((topRatedItem) => {
+              {topRatedData.map((topRatedDataItem) => {
                 return (
-                  <ProductTrio data={topRatedItem} key={topRatedItem.id} />
+                  <ProductTrio
+                    data={topRatedDataItem}
+                    key={topRatedDataItem.id}
+                  />
                 );
               })}
             </div>
@@ -85,8 +113,10 @@ const JvCategory = () => {
           <div className="col-md-4 col-sm-6">
             <div className="jtv-single-cat">
               <h2 className="cat-title">On Sale</h2>
-              {onSale.map((onSaleItem) => {
-                return <ProductTrio data={onSaleItem} key={onSaleItem.id} />;
+              {onSaleData.map((onSaleDataItem) => {
+                return (
+                  <ProductTrio data={onSaleDataItem} key={onSaleDataItem.id} />
+                );
               })}
             </div>
           </div>
@@ -94,52 +124,14 @@ const JvCategory = () => {
           {/* <!-- service area start --> */}
           <div className="col-md-4 col-sm-12 col-xs-12">
             <div className="jtv-service-area">
-              {/* <!-- jtv-single-service start --> */}
-
-              <div className="jtv-single-service">
-                <div className="service-icon">
-                  <img
-                    alt="24/7 Customer Service"
-                    src="/images/customer-service-icon.png"
+              {serviceData.map((serviceDataItem) => {
+                return (
+                  <SingleService
+                    data={serviceDataItem}
+                    key={serviceDataItem.id}
                   />
-                </div>
-                <div className="service-text">
-                  <h2>24/7 Customer Service</h2>
-                  <p>
-                    <span>Call us 24/7</span>
-                  </p>
-                </div>
-              </div>
-              <div className="jtv-single-service">
-                <div className="service-icon">
-                  <img
-                    alt="Free Shipping Worldwide"
-                    src="/images/shipping-icon.png"
-                  />
-                </div>
-                <div className="service-text">
-                  <h2>Free Shipping Worldwide</h2>
-                  <p>
-                    <span>On Applicable Orders</span>
-                  </p>
-                </div>
-              </div>
-              <div className="jtv-single-service">
-                <div className="service-icon">
-                  <img
-                    alt="Money Back Guarantee!"
-                    src="/images/guaratee-icon.png"
-                  />
-                </div>
-                <div className="service-text">
-                  <h2>Money Back Guarantee!</h2>
-                  <p>
-                    <span>For Returnable Products</span>
-                  </p>
-                </div>
-              </div>
-
-              {/* <!-- jtv-single-service end -->  */}
+                );
+              })}
             </div>
           </div>
         </div>

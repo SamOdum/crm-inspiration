@@ -1,7 +1,8 @@
 import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import img1 from '../imgs/banner/115b979b42044c7.jpg';
+// import img1 from '../imgs/banner/115b979b42044c7.jpg';
+import img1 from '../assets/banner/105b979eebe8e09.jpg';
 
 export const HomeSliderContext = createContext();
 
