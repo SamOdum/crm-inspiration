@@ -91,16 +91,16 @@ const Login = () => {
                           htmlFor="loginform-email"
                         >
                           Email
-                          <input
-                            type="text"
-                            id="loginform-email"
-                            className="form-control"
-                            name="LoginForm_email"
-                            aria-required="true"
-                            value={loginData.name}
-                            onChange={handleInputChange}
-                          />
                         </label>
+                        <input
+                          type="text"
+                          id="loginform-email"
+                          className="form-control"
+                          name="LoginForm_email"
+                          aria-required="true"
+                          value={loginData.name}
+                          onChange={handleInputChange}
+                        />
                         <p className="help-block help-block-error" />
                       </div>
                       <div className="form-group field-loginform-password required">
@@ -109,17 +109,16 @@ const Login = () => {
                           htmlFor="loginform-password"
                         >
                           Password
-                          <input
-                            type="password"
-                            id="loginform-password"
-                            className="form-control"
-                            name="LoginForm_password1"
-                            aria-required="true"
-                            value={loginData.password1}
-                            onChange={handleInputChange}
-                          />
                         </label>
-
+                        <input
+                          type="password"
+                          id="loginform-password"
+                          className="form-control"
+                          name="LoginForm_password1"
+                          aria-required="true"
+                          value={loginData.password1}
+                          onChange={handleInputChange}
+                        />
                         <p className="help-block help-block-error" />
                       </div>
                       <div className="form-group field-loginform-rememberme">
@@ -147,15 +146,13 @@ const Login = () => {
                         If you forgot your password you can
                         <NavLink to="/reset-password"> reset it.</NavLink>
                       </div>
-                      <div className="form-group">
-                        <button
-                          type="submit"
-                          className="btn btn-primary"
-                          name="login-button"
-                        >
-                          Login
-                        </button>
-                      </div>
+                      <button
+                        type="submit"
+                        className="btn btn-primary"
+                        name="login-button"
+                      >
+                        Login
+                      </button>
                     </form>
                   </div>
                 </div>

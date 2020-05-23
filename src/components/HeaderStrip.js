@@ -9,7 +9,7 @@ const HeaderStrip = () => {
         <div className="header-top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-sm-4 hidden-xs">
+              <div className="col-lg-4 col-md-5 col-sm-4 hidden-xs">
                 <div className="welcome-msg ">
                   Welcome to Cross River Market
                 </div>
