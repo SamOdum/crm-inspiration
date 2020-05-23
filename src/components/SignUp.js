@@ -46,16 +46,16 @@ const SignUp = () => {
                           htmlFor="signupform-firstname"
                         >
                           First Name
-                          <input
-                            type="text"
-                            id="signupform-firstname"
-                            className="form-control"
-                            name="SignupForm_firstname"
-                            value={signUpData.SignupForm_firstname}
-                            onChange={handleInputChange}
-                            aria-required="true"
-                          />
                         </label>
+                        <input
+                          type="text"
+                          id="signupform-firstname"
+                          className="form-control"
+                          name="SignupForm_firstname"
+                          value={signUpData.SignupForm_firstname}
+                          onChange={handleInputChange}
+                          aria-required="true"
+                        />
                         <p className="help-block help-block-error" />
                       </div>
                       <div className="form-group field-signupform-lastname required">
@@ -64,16 +64,16 @@ const SignUp = () => {
                           htmlFor="signupform-lastname"
                         >
                           Last Name
-                          <input
-                            type="text"
-                            id="signupform-lastname"
-                            className="form-control"
-                            name="SignupForm_lastname"
-                            value={signUpData.SignupForm_lastname}
-                            onChange={handleInputChange}
-                            aria-required="true"
-                          />
                         </label>
+                        <input
+                          type="text"
+                          id="signupform-lastname"
+                          className="form-control"
+                          name="SignupForm_lastname"
+                          value={signUpData.SignupForm_lastname}
+                          onChange={handleInputChange}
+                          aria-required="true"
+                        />
                         <p className="help-block help-block-error" />
                       </div>
                       <div className="form-group field-signupform-email required">
@@ -82,16 +82,17 @@ const SignUp = () => {
                           htmlFor="signupform-email"
                         >
                           Email
-                          <input
-                            type="text"
-                            id="signupform-email"
-                            className="form-control"
-                            name="SignupForm_email"
-                            value={signUpData.SignupForm_email}
-                            onChange={handleInputChange}
-                            aria-required="true"
-                          />
                         </label>
+
+                        <input
+                          type="text"
+                          id="signupform-email"
+                          className="form-control"
+                          name="SignupForm_email"
+                          value={signUpData.SignupForm_email}
+                          onChange={handleInputChange}
+                          aria-required="true"
+                        />
                         <p className="help-block help-block-error" />
                       </div>
                       <div className="form-group field-signupform-password required">
@@ -100,27 +101,26 @@ const SignUp = () => {
                           htmlFor="signupform-password"
                         >
                           Password
-                          <input
-                            type="password"
-                            id="signupform-password"
-                            className="form-control"
-                            name="SignupForm_password"
-                            value={signUpData.SignupForm_password}
-                            onChange={handleInputChange}
-                            aria-required="true"
-                          />
                         </label>
+
+                        <input
+                          type="password"
+                          id="signupform-password"
+                          className="form-control"
+                          name="SignupForm_password"
+                          value={signUpData.SignupForm_password}
+                          onChange={handleInputChange}
+                          aria-required="true"
+                        />
                         <p className="help-block help-block-error" />
                       </div>
-                      <div className="form-group">
-                        <button
-                          type="submit"
-                          className="btn btn-primary"
-                          name="signup-button"
-                        >
-                          Signup
-                        </button>
-                      </div>
+                      <button
+                        type="submit"
+                        className="btn btn-primary"
+                        name="signup-button"
+                      >
+                        Signup
+                      </button>
                     </form>
                   </div>
                 </div>

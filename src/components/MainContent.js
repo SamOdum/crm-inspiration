@@ -14,13 +14,13 @@ const MainContent = () => {
         <div className="row">
           <HomeTabs />
           <HotDeal />
-          <TopBanner />
-          <SpecialProducts />
-          <Testimonials />
-          <BottomBanner />
-          <JvCategory />
         </div>
       </div>
+      <TopBanner />
+      <SpecialProducts />
+      <Testimonials />
+      <BottomBanner />
+      <JvCategory />
     </div>
   );
 };
