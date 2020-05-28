@@ -6,17 +6,15 @@ const SingleProduct = () => {
       <div className="breadcrumbs">
         <div className="container">
           <div className="row">
-              <div className="col-xs-12">
+            <div className="col-xs-12">
               <ul>
                 <li className="home">
-                  {' '}
                   <a title="Go to Home Page" href="index.html">
                     Home
                   </a>
                   <span>&raquo;</span>
                 </li>
                 <li className="">
-                  {' '}
                   <a title="Go to Home Page" href="shop_grid.html">
                     Living Rooms
                   </a>
@@ -27,33 +25,31 @@ const SingleProduct = () => {
                 </li>
               </ul>
             </div>
-            </div>
+          </div>
         </div>
       </div>
       {/* <!-- Breadcrumbs End -->  */}
       {/* <!-- Main Container --> */}
       <div className="main-container col1-layout">
         <div className="container">
-                <div className="row">
+          <div className="row">
             <div className="col-main">
               <div className="product-view-area">
                 <div className="product-big-image col-xs-12 col-sm-5 col-lg-5 col-md-5">
                   <div className="icon-sale-label sale-left">Sale</div>
                   <div className="large-image">
-                    {' '}
                     <a
                       href="images/products/img03.jpg"
                       className="cloud-zoom"
                       id="zoom1"
                       rel="useWrapper: false, adjustY:0, adjustX:20"
                     >
-                      {' '}
                       <img
                         className="zoom-img"
                         src="images/products/img03.jpg"
                         alt="products"
-                      />{' '}
-                    </a>{' '}
+                      />
+                    </a>
                   </div>
                   <div className="flexslider flexslider-thumb">
                     <ul className="previews-list slides">
@@ -128,38 +124,37 @@ const SingleProduct = () => {
                   </div>
                   <div className="price-box">
                     <p className="special-price">
-                      {' '}
-                      <span className="price-label">Special Price</span>{' '}
-                      <span className="price"> $329.99 </span>{' '}
+                      <span className="price-label">Special Price</span>
+
+                      <span className="price"> $329.99 </span>
                     </p>
                     <p className="old-price">
-                      {' '}
-                      <span className="price-label">Regular Price:</span>{' '}
-                      <span className="price"> $359.99 </span>{' '}
+                      <span className="price-label">Regular Price:</span>
+
+                      <span className="price"> $359.99 </span>
                     </p>
                   </div>
                   <div className="ratings">
                     <div className="rating">
-                      {' '}
                       <i className="fa fa-star" />
-{' '}
+
                       <i className="fa fa-star" />
-{' '}
                       <i className="fa fa-star" />
-{' '}
+
                       <i className="fa fa-star-o" />
-{' '}
+
                       <i className="fa fa-star-o" />
-{' '}
                     </div>
                     <p className="rating-links">
-                      {' '}
-                      <a href="#">1 Review(s)</a>{' '}
-                      <span className="separator">|</span>{' '}
-                      <a href="#">Add Your Review</a>{' '}
+                      <a href="#">1 Review(s)</a>
+
+                      <span className="separator">|</span>
+
+                      <a href="#">Add Your Review</a>
                     </p>
                     <p className="availability in-stock pull-right">
-                      Availability: <span>In Stock</span>
+                      Availability:
+                      <span>In Stock</span>
                     </p>
                   </div>
                   <div className="short-description">
@@ -170,7 +165,6 @@ const SingleProduct = () => {
                       est at libero vulputate rutrum.
                     </p>
                     <p>
-                      {' '}
                       Vivamus adipiscing nisl ut dolor dignissim semper. Nulla
                       luctus malesuada tincidunt. Class aptent taciti sociosqu
                       ad litora torquent per conubia nostra, per inceptos
@@ -265,9 +259,8 @@ const SingleProduct = () => {
                       >
                         <span>
                           <i className="fa fa-shopping-cart" />
-{' '}
-Add to Cart
-</span>
+                          Add to Cart
+                        </span>
                       </button>
                     </form>
                   </div>
@@ -306,17 +299,14 @@ Add to Cart
                         className="nav nav-tabs product-tabs"
                       >
                         <li className="active">
-                          {' '}
                           <a href="#description" data-toggle="tab">
-                            {' '}
-                            Description{' '}
-                          </a>{' '}
+                            Description
+                          </a>
                         </li>
                         <li>
-                          {' '}
                           <a href="#reviews" data-toggle="tab">
                             Reviews
-                          </a>{' '}
+                          </a>
                         </li>
                         <li>
                           <a href="#product_tags" data-toggle="tab">
@@ -324,10 +314,9 @@ Add to Cart
                           </a>
                         </li>
                         <li>
-                          {' '}
                           <a href="#custom_tabs" data-toggle="tab">
                             Custom Tab
-                          </a>{' '}
+                          </a>
                         </li>
                       </ul>
                       <div id="productTabContent" className="tab-content">
@@ -360,7 +349,6 @@ Add to Cart
                               tincidunt.
                             </p>
                             <p>
-                              {' '}
                               Nunc facilisis sagittis ullamcorper. Proin lectus
                               ipsum, gravida et mattis vulputate, tristique ut
                               lectus. Sed et lorem nunc. Vestibulum ante ipsum
@@ -377,7 +365,6 @@ Add to Cart
                               tellus non nunc mattis lobortis.
                             </p>
                             <p>
-                              {' '}
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Sed tempor, lorem et placerat vestibulum,
                               metus nisi posuere nisl, in accumsan elit odio
@@ -385,7 +372,7 @@ Add to Cart
                               et, luctus a nunc. Etiam gravida vehicula tellus,
                               in imperdiet ligula euismod eget. Pellentesque
                               habitant morbi tristique senectus et netus et
-                              malesuada fames ac turpis egestas.{' '}
+                              malesuada fames ac turpis egestas.
                             </p>
                           </div>
                         </div>
@@ -395,7 +382,8 @@ Add to Cart
                               <h2>Customer Reviews</h2>
                               <div className="review-ratting">
                                 <p>
-                                  <a href="#">Amazing</a> Review by Company
+                                  <a href="#">Amazing</a>
+                                  Review by Company
                                 </p>
                                 <table>
                                   <tbody>
@@ -403,17 +391,15 @@ Add to Cart
                                       <th>Price</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -421,17 +407,15 @@ Add to Cart
                                       <th>Value</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -439,31 +423,29 @@ Add to Cart
                                       <th>Quality</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
                                 <p className="author">
-                                  {' '}
                                   Angela Mack
-                                  <small> (Posted on 16/12/2015)</small>{' '}
+                                  <small> (Posted on 16/12/2015)</small>
                                 </p>
                               </div>
                               <div className="review-ratting">
                                 <p>
-                                  <a href="#">Good!!!!!</a> Review by Company
+                                  <a href="#">Good!!!!!</a>
+                                  Review by Company
                                 </p>
                                 <table>
                                   <tbody>
@@ -471,17 +453,15 @@ Add to Cart
                                       <th>Price</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -489,17 +469,15 @@ Add to Cart
                                       <th>Value</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -507,31 +485,29 @@ Add to Cart
                                       <th>Quality</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
                                 <p className="author">
-                                  {' '}
                                   Lifestyle
-                                  <small> (Posted on 20/12/2015)</small>{' '}
+                                  <small> (Posted on 20/12/2015)</small>
                                 </p>
                               </div>
                               <div className="review-ratting">
                                 <p>
-                                  <a href="#">Excellent</a> Review by Company
+                                  <a href="#">Excellent</a>
+                                  Review by Company
                                 </p>
                                 <table>
                                   <tbody>
@@ -539,17 +515,15 @@ Add to Cart
                                       <th>Price</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -557,17 +531,15 @@ Add to Cart
                                       <th>Value</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
@@ -575,29 +547,23 @@ Add to Cart
                                       <th>Quality</th>
                                       <td>
                                         <div className="rating">
-                                          {' '}
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
+
                                           <i className="fa fa-star-o" />
-{' '}
                                         </div>
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
                                 <p className="author">
-                                  {' '}
                                   Jone Deo
-  {' '}
-  (Posted on 25/12/2015)
-                                  </small>
-{' '}
+                                  <small>(Posted on 25/12/2015)</small>
                                 </p>
                               </div>
                             </div>
@@ -607,7 +573,8 @@ Add to Cart
                               <h2>Write Your Own Review</h2>
                               <form>
                                 <h3>
-                                  You're reviewing: <span>Donec Ac Tempus</span>
+                                  You're reviewing:
+                                  <span>Donec Ac Tempus</span>
                                 </h3>
                                 <h4>
                                   How do you rate this product?
@@ -684,19 +651,22 @@ Add to Cart
                                 <div className="form-area">
                                   <div className="form-element">
                                     <label>
-                                      Nickname <em>*</em>
+                                      Nickname
+                                      <em>*</em>
                                     </label>
                                     <input type="text" />
                                   </div>
                                   <div className="form-element">
                                     <label>
-                                      Summary of Your Review <em>*</em>
+                                      Summary of Your Review
+                                      <em>*</em>
                                     </label>
                                     <input type="text" />
                                   </div>
                                   <div className="form-element">
                                     <label>
-                                      Review <em>*</em>
+                                      Review
+                                      <em>*</em>
                                     </label>
                                     <textarea />
                                   </div>
@@ -708,7 +678,6 @@ Add to Cart
                                     >
                                       <span>
                                         <i className="fa fa-thumbs-up" />
-{' '}
                                         &nbsp;Review
                                       </span>
                                     </button>
@@ -739,9 +708,8 @@ Add to Cart
                                       className="button add-tags"
                                     >
                                       <i className="fa fa-plus" />
-{' '}
-&nbsp;
-<span>Add Tags</span>{' '}
+                                      &nbsp;
+                                      <span>Add Tags</span>
                                     </button>
                                   </div>
                                   {/* <!--input-box-->  */}
@@ -784,7 +752,7 @@ Add to Cart
               </div>
             </div>
           </div>
-              </div>
+        </div>
       </div>
     </>
   );
