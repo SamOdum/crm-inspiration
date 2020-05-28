@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage';
 import ResetPasswPage from './pages/ResetPasswPage';
 import SignUpPage from './pages/SignUpPage';
 import VendorSignUpPage from './pages/VendorSignUpPage';
+import ProductPage from './pages/ProductPage';
 // import './vendor/cloud-zoom';
 // import './vendor/countdown';
 // import './vendor/jquery-ui';
@@ -32,6 +33,7 @@ function App() {
             <Route path="/reset-password" component={ResetPasswPage} />
             <Route path="/signup" component={SignUpPage} />
             <Route path="/vendor-signup" component={VendorSignUpPage} />
+            <Route path="/product" component={ProductPage} />
           </Switch>
         </HomeSliderProvider>
       </LoginProvider>
